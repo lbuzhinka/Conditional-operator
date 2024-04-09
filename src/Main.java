@@ -10,9 +10,9 @@ public class Main {
         System.out.println("\nTask 2");
         int weather = 2;
         if (weather > 5) {
-            System.out.println("На улице тепло, " + weather + " градусов, можно идти без шаки");
+            System.out.println("На улице тепло, " + weather + " градусов, можно идти без шапки");
         } else {
-            System.out.println("На улице холодно, " + weather + " градусов, нужнонадеть шапку");
+            System.out.println("На улице холодно, " + weather + " градусов, нужно надеть шапку");
         }
         System.out.println("\nTask 3");
         int speed = 50;
@@ -23,9 +23,9 @@ public class Main {
         }
         System.out.println("\nTask 4");
         int years = 8;
-        if (years > 2 && years < 6) {
+        if (years >= 2 && years <= 6) {
             System.out.println("Если человеку " + years + " то ему нужно ходить в детский сад");
-        } else if (years > 7 && years < 17)
+        } else if (years >= 7 && years <= 17)
         {System.out.println("Если человеку " + years + " то ему нужно ходить в школу");}
           else if (years >= 18 && years <= 24) {
             System.out.println("Если человеку " + years + " то ему нужно ходить в университет");}
@@ -35,9 +35,9 @@ public class Main {
         System.out.println("\nTask 5");
           if (years < 5) {
               System.out.println("Если ребенку " + years + " то он ему нельзя кататься на аттракционах");
-          } else if (years > 5 && years < 14) {
+          } else if (years >= 5 && years <= 14) {
               System.out.println("Если ребенку " + years + " то ему можно кататься на аттракционах только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
-          } else if (years >= 14) {
+          } else if (years > 14) {
               System.out.println("Если ребенку " + years + " то он может кататься на аттракционах без сопровождния взрослого. ");
           }
         System.out.println("\nTask 6");
@@ -55,13 +55,13 @@ public class Main {
           int one = 1;
           int two = 2;
           int three = 3;
-          if (one > two && two > three) {
+          if (one > two && one > three) {
             System.out.println("Первое число больше");
         }
-         if (two > one && one > three) {
+         else if (two > one && two > three) {
             System.out.println("Второе число больше");
         }
-         if (three > two && two > one) {
+         else if (three > two && three > one) {
             System.out.println("Третье число больше");
         }
 
